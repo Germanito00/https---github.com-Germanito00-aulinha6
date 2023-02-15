@@ -11,7 +11,22 @@
                 position: absolute;
                 top: 0px;
                 left: 0px;
-                animation: engrena 5s infinite;
+                animation: engrena 5s infinite linear;
+
+            }
+            @keyframes engrena
+        {
+            0% { rotate: 0deg; }
+            
+            100% { rotate: 360deg; }
+            
+        }
+        .engrena2
+            {
+                position: absolute;
+                top: 120px;
+                left: 450px;
+                animation: engrena 5s infinite linear reverse;
 
             }
             @keyframes engrena
@@ -26,6 +41,8 @@
 <body>
     
     <img src="engrenagem.png" class="engrena">
+    <img src="engrenagem.png" class="engrena2">
+
 
 </body>
 </html>
